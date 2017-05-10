@@ -1,0 +1,1 @@
+java -jar "D:\Grid\server.jar" -role hub -debug

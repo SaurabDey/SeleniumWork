@@ -1,0 +1,5 @@
+WinWaitActive("Windows Security")
+Send("userid")
+Send("{TAB}")
+Send("password")
+Send("{ENTER}")

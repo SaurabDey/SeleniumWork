@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+ <listeners>
+ 		<listener class-name="atu.testng.reports.listeners.ATUReportsListener">  	</listener>
+  		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"> 	</listener>
+  		<listener class-name="atu.testng.reports.listeners.MethodListener">  	</listener>
+  </listeners>
+
+  <test name="Test">
+  <parameter name="browserName" value="internet explorer"/>
+    <classes>
+      <class name="com.start.miainTestNGExcelWrite_Grid"/>
+      <methods>
+      	
+      	<include name="readWriteExcel_LOGIN"/>
+      	      	
+      </methods>
+    </classes>
+  </test> <!-- Test -->
+ 
+  <test name="Test2">
+  <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.start.miainTestNGExcelWrite_Grid"/>
+      <methods>
+      	
+      	<include name="alert"/>
+      	
+      </methods>
+    </classes>
+  </test> <!-- Test 2 -->
+  
+  <test name="Test3">
+  <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.start.miainTestNGExcelWrite_Grid"/>
+      <methods>
+      	
+      	<include name="switching"/>
+      
+      </methods>
+    </classes>
+  </test> <!-- Test3-->
+
+ 
+  
+ 
+</suite> <!-- Suite -->
