@@ -1,0 +1,14 @@
+2016-05-08 12:19:25 INFO com.POM.MainClass:31 - Started Execution
+2016-05-08 12:19:25 INFO com.POM.MainClass:35 - Initialiasing property file
+2016-05-08 12:19:25 INFO com.POM.MainClass:45 - Initialised the property file
+2016-05-08 12:19:25 INFO com.POM.MainClass:48 - Starting Browser
+2016-05-08 12:19:31 INFO com.POM.MainClass:52 - Deleting Cookies
+2016-05-08 12:19:35 INFO com.POM.MainClass:56 - Launching URL
+2016-05-08 12:19:41 INFO com.POM.MainClass:65 - Launched the browser
+2016-05-08 12:19:42 INFO com.POM.LoginPage:69 - successfully set the user name
+2016-05-08 12:19:42 WARN com.POM.LoginPage:71 - Set the password
+2016-05-08 12:19:42 ERROR com.POM.LoginPage:73 - successfully set the password
+2016-05-08 12:19:42 FATAL com.POM.LoginPage:75 - Set the password
+2016-05-08 12:19:42 INFO com.POM.DashboardPage:27 - Getting the test of the page
+2016-05-08 12:19:50 INFO com.POM.DashboardPage:33 - Getting the title of the page
+2016-05-08 12:19:52 INFO com.POM.MainClass:92 - Browser Closed

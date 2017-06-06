@@ -1,0 +1,44 @@
+-Set path of Android SDK in environment variable till 1) platformtool and 2) tools
+
+-Check android is install by typing "android"
+
+-Connect mobile with USB- check using "adb devices"
+	Mobile should be connected using USB
+
+-Connect Mobile with Wifi
+	adb tcpip 5555
+	adb connect 192.168.0.4
+	
+-Connect two Mobile with Wifi
+	Connect mobile 1 with USB
+	adb tcpip 5555
+	Remove the mobile 1
+	
+	Connect mobile 2 with USB
+	adb tcpip 5555
+	Remove the mobile 1
+	
+	Now write 
+	adb connect 192.168.0.4
+	adb connect 192.168.0.100
+	
+	
+Start APPIUM
+1) Using Appium.exe
+2) Using below commands 
+	Go to path having the appium.js e.g. "E:\Appium\node_modules\appium\bin"
+	Write:
+	E:\\Appium\\node     E:\\Appium\\node_modules\\appium\\bin\\appium -p 4723 -U 192.168.0.4:5555 --chromedriver-port 9515
+		(4723 is the default port can be changed)
+		(192.168.0.4:5555 is the ip address of the mobile)
+		
+Start APPIUM and connect with Grid HUB
+1)Write java -jar D:\GRID\selenium-server-standalone-2.44.0.jar -role hub -port 4444
+2)Connect Appium node
+	Go to path having the appium.js e.g. "E:\Appium\node_modules\appium\bin"
+	Write:
+	node appium --nodeconfig C:\Users\Saurab\Desktop\node1.json -p 4723 -U 192.168.0.4:5555
+3)Start a browser node
+	java -jar D:\GRID\selenium-server-standalone-2.44.0.jar -role node -port 5555 -Dwebdriver.chrome.driver=D:\GRID\chromedriver.exe -browser browserName=chrome
+
+Note: To inspect elements in mobile chrome browser use the url  chrome://inspect/#devices
